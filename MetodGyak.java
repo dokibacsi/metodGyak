@@ -10,7 +10,7 @@ public class MetodGyak {
        int szam4 = 2;
        osszeg = osszead(szam1, szam2);
        osszeg2 = osszead(szam3, szam4);
-       int 4szamOsszeg = osszeg + osszeg2;
+       int negySzamOsszeg = osszeg + osszeg2;
        kiir("%d + %d = %d\n".formatted(szam1, szam2, osszeg));
     }
     
