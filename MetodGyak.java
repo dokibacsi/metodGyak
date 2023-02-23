@@ -1,26 +1,26 @@
 package metodgyak;
 public class MetodGyak {
     public static void main(String[] args) {
-       
+       kiir("Az első 10 szám összege: "+ elso10SzamOsszege());
+       kiir("\n");
+       kiir("%d + %d = %d", 2, 3, osszead(2+3));
     }
     
-    private static void elso10SzamOsszege() {
+    private static int elso10SzamOsszege() {
         int osszeg = 0;
         for (int i = 0; i < 10; i++) {
             osszeg += i;
         }
-        //kiir
-        kiir("Az első 10 szám összege: " + osszeg);
+        return osszeg;
     }
     
-    private static String osszead(int a, int b){
-        String osszeadSzoveg = "%d + %d = %d\n", a, b, a+b;
-        return osszeadSzoveg;
+    private static int osszead(int szam1, int szam2){
+       return szam1+szam2;
     }
     
     
     private static void kiir(String szoveg){
-        System.out.println(szoveg);
+        System.out.print(szoveg);
     }
     
 }
