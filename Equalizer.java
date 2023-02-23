@@ -10,17 +10,17 @@ public class Equalizer {
     
     private static void otEq(){
         for (int i = 0; i < 5; i++) {
-            Eq();
+            Eq(3);
         }
     }
     private static void Eq(){
-        int felso, also;
-        also = 3;
-        felso = 7;
-        int db = (int) (Math.random()* also + felso - 1)- also;
+        int db = rnd.nextInt(3,8);
+        Eq(db);
+}
+    private static void Eq(int hossz){
+        int db = hossz;
         for (int i = 0; i < db; i++) {
             System.out.print("\u001B[45m" + " ");
         }
-        System.out.print("\n");
-}
+    }
 }
